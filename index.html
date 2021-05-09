@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new test.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>CreativeWebii</title>
+</head>
+<body>  
+    <div class="header">
+        <div class="logo">
+            <p>programming hack</p>
+        </div>
+        <div class="nav menu-item" id="slide" >
+            <ul>
+                <li><a href="#" id="active">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="division"></div>
+    <div class="ham-lines">
+        <span class="line" id="open-line" onclick="opennavi()">&#9776;</span>
+        <span class="cross" id="close-cross" onclick="closenavi()">&times;</span>
+    </div>
+    <div class="container">
+        <h1>lets build some website together</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, natus! Corporis reiciendis voluptates eaque ratione pariatur illum ipsa tempore minus impedit? Dicta, cupiditate.</p>
+        <button class="btn">read more</button>
+    </div>
+
+    <script>
+
+        var op = document.getElementById('open-line');
+        var clo = document.getElementById('close-cross');
+        var menu = document.getElementById('slide');
+
+
+        function opennavi(){
+            op.style.display ="none";
+            clo.style.display ="block";
+            menu.style.height ="160px";
+        }
+        
+        function closenavi(){
+            op.style.display ="block";
+            clo.style.display ="none";
+            menu.style.height ="0px";
+        }
+        
+
+    </script>
+
+</body>
+</html>
